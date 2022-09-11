@@ -40,6 +40,9 @@ int main() {
   switch (op) {
   case 1:
     for (int i = cad; i <= n; i++) {
+      if(P[i].codigo != 0){
+        cout << "\nPosição ocupada!"
+      }
       P[i].setCodigo(i);
       cout << "\nDigite seu nome: ";
       cin >> P[i].nome;
